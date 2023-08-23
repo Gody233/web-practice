@@ -1,0 +1,28 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #2f3542;
+}
+.logo-text{
+    font-size: 2em;
+    stroke: white;
+    fill:none;
+    stroke-width: 1;
+    stroke-dasharray: 10 800;
+    stroke-dashoffset: 10;
+    animation: textdrawing 5s linear forwards;
+}
+
+@keyframes textdrawing{
+    to{
+        stroke-dasharray: 800;
+        stroke-dashoffset: 0;
+    }
+}
